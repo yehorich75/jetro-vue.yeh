@@ -1,16 +1,23 @@
 <template>
+<main-layout>
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
+</main-layout>
+
 </template>
 
 <script>
+import MainLayout from '@/layout/MainLayout';
 export default {
   name: 'Homepage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    MainLayout
   }
 }
 </script>
