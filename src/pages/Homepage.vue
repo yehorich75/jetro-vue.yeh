@@ -1,7 +1,7 @@
 <template>
 <main-layout>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="singlepost">{{ msg }}</h1>
   </div>
 </main-layout>
 
@@ -24,7 +24,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-h1
+.singlepost
   background: green
 
 h1, h2
