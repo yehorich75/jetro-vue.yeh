@@ -1,7 +1,10 @@
 <template>
 <main-layout>
   <div class="hello">
-    <h1 class="singlepost">{{ msg }}</h1>
+    <h1 class="singlepost">Posts</h1>
+    <post/>
+    <post/>
+    <post/>
   </div>
 </main-layout>
 
@@ -9,15 +12,23 @@
 
 <script>
 import MainLayout from '@/layout/MainLayout';
+import Post from '@/components/Post';
 export default {
   name: 'Homepage',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      posts: [
+        {id: 1, title: "BlaBlaBla 1"},
+        {id: 2, title: "BlaBlaBla 2"},
+        {id: 3, title: "BlaBlaBla 3"},
+        {id: 4, title: "BlaBlaBla 4"},
+        {id: 5, title: "BlaBlaBla 5"}
+      ]
     }
   },
   components: {
-    MainLayout
+    MainLayout,
+    Post
   }
 }
 </script>
