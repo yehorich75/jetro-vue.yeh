@@ -1,13 +1,15 @@
-<template>
-<main-layout>
-  <div class="hello">
-    <h1 class="singlepost">SinglePostPage</h1>
-  </div>
-</main-layout>
+<template lang="pug">
+main-layout
+  .hello
+    h1.singlepost SinglePostPage
+    post
+    post
+    post
 </template>
 
 <script>
 import MainLayout from '@/layout/MainLayout';
+import Post from '@/components/Post';
 export default {
   name: 'SinglePost',
   data () {
@@ -16,7 +18,8 @@ export default {
     }
   },
   components: {
-    MainLayout
+    MainLayout,
+    Post
   }
 }
 </script>

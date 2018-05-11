@@ -2,9 +2,7 @@
 <main-layout>
   <div class="hello">
     <h1 class="singlepost">Posts</h1>
-    <post/>
-    <post/>
-    <post/>
+    <post heading="Whatever Title" subtitle="Lorem Ipsum Dolor Sit Amet" />
   </div>
 </main-layout>
 
